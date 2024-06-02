@@ -24,14 +24,14 @@ programs = {
     "Json11":
     {
         "url": os.path.join(PARSERS_DIR, "test_json11"),
-        # "setup": ["g++", os.path.join(PARSERS_DIR, "test_json11/main.cpp"), os.path.join(PARSERS_DIR, "test_json11/json11.cpp"),
-        #           "-o", os.path.join(PARSERS_DIR, "test_json11/test_json11.exe")],
+        "setup": ["g++", os.path.join(PARSERS_DIR, "test_json11/main.cpp"), os.path.join(PARSERS_DIR, "test_json11/json11.cpp"),
+                  "-o", os.path.join(PARSERS_DIR, "test_json11/test_json11.exe")],
         "commands": [os.path.join(PARSERS_DIR, "test_json11/test_json11.exe")]
     },
     "Configuru":
     {
         "url": os.path.join(PARSERS_DIR, "test_configuru"),
-        # "setup": ["g++", os.path.join(PARSERS_DIR, "test_configuru/main.cpp"), "-o", os.path.join(PARSERS_DIR, "test_configuru/test_configuru.exe")],
+        "setup": ["g++", os.path.join(PARSERS_DIR, "test_configuru/main.cpp"), "-o", os.path.join(PARSERS_DIR, "test_configuru/test_configuru.exe")],
         "commands": [os.path.join(PARSERS_DIR, "test_configuru/test_configuru.exe")]
     },
     "Python":
@@ -42,8 +42,14 @@ programs = {
     "JSMN":
     {
         "url": os.path.join(PARSERS_DIR, "test_jsmn"),
-        # "setup": ["gcc", os.path.join(PARSERS_DIR, "test_jsmn/main.c"), "-o", os.path.join(PARSERS_DIR, "test_jsmn/test_jsmn.exe")],
+        "setup": ["gcc", os.path.join(PARSERS_DIR, "test_jsmn/main.c"), "-o", os.path.join(PARSERS_DIR, "test_jsmn/test_jsmn.exe")],
         "commands": [os.path.join(PARSERS_DIR, "test_jsmn/test_jsmn.exe")]
+    },
+    "bsttJson":
+    {
+        "url": os.path.join(PARSERS_DIR, "test_bsttJson"),
+        "setup": ["g++", os.path.join(PARSERS_DIR, "test_bsttJson/main.cpp"), "-o", os.path.join(PARSERS_DIR, "test_bsttJson/test_bsttJson.exe")],
+        "commands": [os.path.join(PARSERS_DIR, "test_bsttJson/test_bsttJson.exe")]
     },
 }
 
